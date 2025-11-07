@@ -41,6 +41,20 @@
     "date-fns": "^2.30.0",
     "lodash": "^4.17.21"
   },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit",
+    "analyze": "npm run build && npm run analyze:bundle",
+    "analyze:bundle": "next-bundle-analyzer"
+  },
   "devDependencies": {
     "@types/node": "^20.6.3",
     "@types/react": "^18.2.22",
